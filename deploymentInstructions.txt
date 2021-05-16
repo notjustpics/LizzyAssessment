@@ -1,0 +1,17 @@
+The solution is divided into 4 Projects, Namely:
+ 1. Assessment.BusinessLogic - Core Application functionality
+ 2. Assessment.Service - WCF Service for exposing BusinessLogic Functionality
+ 3. Assessment.ConsoleApplication - Console Program that generates the 2 output files. It Uses the WCF Service to generate the .txt files.
+ 4. Assessment.UnitTest - MS Unit Test that test the BusinessLogic Layer functionality.
+
+Instructions:
+ - Publish the service in local IIS (Assessment.Service) or upate the Service Reference in Assessment.ConsoleApplication to point to where the service is deployed.
+ - In the Web.config of Assessment.Service, update the appSettings SearchFileName to the .csv file name (the .csv file should contain this name for the program to be able to pick it up for further processing),
+ - And also Update SearchFileName to point to base directory for storing the files
+ - The same should be done for Assessment.UnitTest App.config file
+
+The program only searches for .csv files in the base directory
+
+The Sorted output files will be in the above directory once the program complete running. 
+
+The .csv template file used in developing the program is also included

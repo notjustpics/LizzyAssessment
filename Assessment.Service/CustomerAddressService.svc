@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Assessment.Service.CustomerAddressService" CodeBehind="CustomerAddressService.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory" %>
